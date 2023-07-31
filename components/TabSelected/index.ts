@@ -1,0 +1,2 @@
+export {TabSelected} from './TabSelected';
+

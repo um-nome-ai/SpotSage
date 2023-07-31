@@ -1,0 +1,2 @@
+export {IconWalking} from './IconWalking';
+

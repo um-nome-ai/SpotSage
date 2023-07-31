@@ -1,0 +1,2 @@
+export {IconDrone} from './IconDrone';
+

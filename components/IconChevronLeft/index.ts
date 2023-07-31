@@ -1,0 +1,2 @@
+export {IconChevronLeft} from './IconChevronLeft';
+
