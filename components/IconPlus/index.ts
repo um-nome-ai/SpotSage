@@ -1,0 +1,2 @@
+export {IconPlus} from './IconPlus';
+

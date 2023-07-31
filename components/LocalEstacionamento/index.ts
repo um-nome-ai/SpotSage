@@ -1,0 +1,2 @@
+export {LocalEstacionamento} from './LocalEstacionamento';
+

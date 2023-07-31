@@ -1,0 +1,2 @@
+export {IconCamera} from './IconCamera';
+

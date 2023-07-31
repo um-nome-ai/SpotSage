@@ -1,0 +1,2 @@
+export {ButtonPrimaryWithIcon} from './ButtonPrimaryWithIcon';
+

@@ -1,0 +1,2 @@
+export {IconSearch} from './IconSearch';
+

@@ -1,0 +1,2 @@
+export {IconCheck} from './IconCheck';
+
