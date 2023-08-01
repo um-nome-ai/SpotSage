@@ -1,176 +1,175 @@
-import { View, Text, ScrollView } from 'react-native';
+import { View, Text, ScrollView, TouchableHighlight } from 'react-native';
 import { Image } from 'expo-image'
-import React from 'react';
+import React, { useState } from 'react';
 import EStyleSheet from 'react-native-extended-stylesheet'
 import { NavigationBar } from '../../components/NavigationBar';
-import { IconPlus } from '../../components/IconPlus/index';
-
-import imagem from '../../assets/images/imagem.png';
-import imagem2 from '../../assets/images/imagem2.png';
-import imagem3 from '../../assets/images/imagem3.png';
-import imagem4 from '../../assets/images/imagem4.png';
-import imagem5 from '../../assets/images/imagem5.png';
 import imagem6 from '../../assets/images/imagem6.png';
-import imagem7 from '../../assets/images/imagem7.png';
-import Polygon1 from '../../assets/vectors/Polygon1.svg';
 import theme from '../../theme';
 
-export function Intro(props: { fonts: Array<string> }) {
+type shoppings = Array<{
+  name: string,
+  address: string,
+  CSC: string,
+  image: string
+}>;
+
+export function Intro(props: { fonts: Array<string>, shoppings: shoppings }) {
   return (
     <ScrollView style={[styles.root, styles.shadowProp_root]}>
       <NavigationBar /*barra de nav superior*/ />
       <View style={styles.search} />
-      <View style={styles.recentes}>
+      <View style={styles.recentes} /*recentes*/>
         <View style={styles.background}>
           <View style={styles.cards}>
             <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
               <Text style={styles.recentes2}>
                 Recentes
               </Text>
-              <IconPlus />
+              {/* toggle + pros recentes */}
             </View>
-            <View style={styles.localCard6}>
-              <View style={styles.rectangle466}>
-                <View style={{ flexDirection: 'column', zIndex: 3 }}>
-                  <Text style={styles.local6}>
-                    Local
-                  </Text>
-                  <Text style={styles.info36}>
-                    Ultima coisa
-                  </Text>
-                  <Text style={styles.info26}>
-                    Outra informação
-                  </Text>
-                  <Text style={styles.info16}>
-                    Endereço
-                  </Text>
+            <TouchableHighlight onPress={() => { console.log("hi1") }}>
+              <View style={styles.localCard6}>
+                <View style={styles.rectangle466}>
+                  <View style={{ flexDirection: 'column', zIndex: 3 }}>
+                    <Text style={styles.local6}>
+                      {props.shoppings[0].name}
+                    </Text>
+                    <Text style={styles.info36}>
+                      {props.shoppings[0].address}
+                    </Text>
+                    <Text style={styles.info26}>
+                      {props.shoppings[0].CSC}
+                    </Text>
+                  </View>
+                  <Image source={props.shoppings[0].image} style={{ width: 132, height: 87, zIndex: 3 }} contentFit="cover" />
                 </View>
-                <Image source={imagem6} style={{ width: 132, height: 87, zIndex: 3 }} contentFit="cover" />
               </View>
-            </View>
-            <View style={styles.localCard6}>
-              <View style={styles.rectangle466}>
-                <View style={{ flexDirection: 'column', zIndex: 3 }}>
-                  <Text style={styles.local6}>
-                    Local
-                  </Text>
-                  <Text style={styles.info36}>
-                    Ultima coisa
-                  </Text>
-                  <Text style={styles.info26}>
-                    Outra informação
-                  </Text>
-                  <Text style={styles.info16}>
-                    Endereço
-                  </Text>
+            </TouchableHighlight>
+            <TouchableHighlight onPress={() => { console.log("hi2") }}>
+              <View style={styles.localCard6}>
+                <View style={styles.rectangle466}>
+                  <View style={{ flexDirection: 'column', zIndex: 3 }}>
+                    <Text style={styles.local6}>
+                      {props.shoppings[1].name}
+                    </Text>
+                    <Text style={styles.info36}>
+                      {props.shoppings[1].address}
+                    </Text>
+                    <Text style={styles.info26}>
+                      {props.shoppings[1].CSC}
+                    </Text>
+                  </View>
+                  <Image source={props.shoppings[1].image} style={{ width: 132, height: 87, zIndex: 3 }} contentFit="cover" />
                 </View>
-                <Image source={imagem6} style={{ width: 132, height: 87, zIndex: 3 }} contentFit="cover" />
               </View>
-            </View>
+            </TouchableHighlight>
           </View>
         </View>
       </View>
-      <View style={styles.locais}>
-        <Text style={styles.locaisProximos}>
-          Locais Próximos
-        </Text>
-        <View style={styles.localCard6}>
-          <View style={styles.rectangle466}>
-            <View style={{ flexDirection: 'column', zIndex: 3 }}>
-              <Text style={styles.local6}>
-                Local
-              </Text>
-              <Text style={styles.info36}>
-                Ultima coisa
-              </Text>
-              <Text style={styles.info26}>
-                Outra informação
-              </Text>
-              <Text style={styles.info16}>
-                Endereço
-              </Text>
+      <View style={styles.locais} /*locais proximos*/>
+        <View style={styles.search2} />
+        <View style={styles.cards2}>
+          <Text style={styles.locaisProximos}>
+            Locais Próximos
+          </Text>
+          <View style={styles.localCard6}>
+            <View style={styles.rectangle466}>
+              <View style={{ flexDirection: 'column', zIndex: 3 }}>
+                <Text style={styles.local6}>
+                  Local
+                </Text>
+                <Text style={styles.info36}>
+                  Ultima coisa
+                </Text>
+                <Text style={styles.info26}>
+                  Outra informação
+                </Text>
+                <Text style={styles.info16}>
+                  Endereço
+                </Text>
+              </View>
+              <Image source={imagem6} style={{ width: 132, height: 87, zIndex: 3 }} contentFit="cover" />
             </View>
-            <Image source={imagem6} style={{ width: 132, height: 87, zIndex: 3 }} contentFit="cover" />
+          </View>
+          <View style={styles.localCard6}>
+            <View style={styles.rectangle466}>
+              <View style={{ flexDirection: 'column', zIndex: 3 }}>
+                <Text style={styles.local6}>
+                  Local
+                </Text>
+                <Text style={styles.info36}>
+                  Ultima coisa
+                </Text>
+                <Text style={styles.info26}>
+                  Outra informação
+                </Text>
+                <Text style={styles.info16}>
+                  Endereço
+                </Text>
+              </View>
+              <Image source={imagem6} style={{ width: 132, height: 87, zIndex: 3 }} contentFit="cover" />
+            </View>
+          </View>
+          <View style={styles.localCard6}>
+            <View style={styles.rectangle466}>
+              <View style={{ flexDirection: 'column', zIndex: 3 }}>
+                <Text style={styles.local6}>
+                  Local
+                </Text>
+                <Text style={styles.info36}>
+                  Ultima coisa
+                </Text>
+                <Text style={styles.info26}>
+                  Outra informação
+                </Text>
+                <Text style={styles.info16}>
+                  Endereço
+                </Text>
+              </View>
+              <Image source={imagem6} style={{ width: 132, height: 87, zIndex: 3 }} contentFit="cover" />
+            </View>
+          </View>
+          <View style={styles.localCard6}>
+            <View style={styles.rectangle466}>
+              <View style={{ flexDirection: 'column', zIndex: 3 }}>
+                <Text style={styles.local6}>
+                  Local
+                </Text>
+                <Text style={styles.info36}>
+                  Ultima coisa
+                </Text>
+                <Text style={styles.info26}>
+                  Outra informação
+                </Text>
+                <Text style={styles.info16}>
+                  Endereço
+                </Text>
+              </View>
+              <Image source={imagem6} style={{ width: 132, height: 87, zIndex: 3 }} contentFit="cover" />
+            </View>
+          </View>
+          <View style={styles.localCard6}>
+            <View style={styles.rectangle466}>
+              <View style={{ flexDirection: 'column', zIndex: 3 }}>
+                <Text style={styles.local6}>
+                  Local
+                </Text>
+                <Text style={styles.info36}>
+                  Ultima coisa
+                </Text>
+                <Text style={styles.info26}>
+                  Outra informação
+                </Text>
+                <Text style={styles.info16}>
+                  Endereço
+                </Text>
+              </View>
+              <Image source={imagem6} style={{ width: 132, height: 87, zIndex: 3 }} contentFit="cover" />
+            </View>
           </View>
         </View>
-        <View style={styles.localCard6}>
-          <View style={styles.rectangle466}>
-            <View style={{ flexDirection: 'column', zIndex: 3 }}>
-              <Text style={styles.local6}>
-                Local
-              </Text>
-              <Text style={styles.info36}>
-                Ultima coisa
-              </Text>
-              <Text style={styles.info26}>
-                Outra informação
-              </Text>
-              <Text style={styles.info16}>
-                Endereço
-              </Text>
-            </View>
-            <Image source={imagem6} style={{ width: 132, height: 87, zIndex: 3 }} contentFit="cover" />
-          </View>
-        </View>
-        <View style={styles.localCard6}>
-          <View style={styles.rectangle466}>
-            <View style={{ flexDirection: 'column', zIndex: 3 }}>
-              <Text style={styles.local6}>
-                Local
-              </Text>
-              <Text style={styles.info36}>
-                Ultima coisa
-              </Text>
-              <Text style={styles.info26}>
-                Outra informação
-              </Text>
-              <Text style={styles.info16}>
-                Endereço
-              </Text>
-            </View>
-            <Image source={imagem6} style={{ width: 132, height: 87, zIndex: 3 }} contentFit="cover" />
-          </View>
-        </View>
-        <View style={styles.localCard6}>
-          <View style={styles.rectangle466}>
-            <View style={{ flexDirection: 'column', zIndex: 3 }}>
-              <Text style={styles.local6}>
-                Local
-              </Text>
-              <Text style={styles.info36}>
-                Ultima coisa
-              </Text>
-              <Text style={styles.info26}>
-                Outra informação
-              </Text>
-              <Text style={styles.info16}>
-                Endereço
-              </Text>
-            </View>
-            <Image source={imagem6} style={{ width: 132, height: 87, zIndex: 3 }} contentFit="cover" />
-          </View>
-        </View>
-        <View style={styles.localCard6}>
-          <View style={styles.rectangle466}>
-            <View style={{ flexDirection: 'column', zIndex: 3 }}>
-              <Text style={styles.local6}>
-                Local
-              </Text>
-              <Text style={styles.info36}>
-                Ultima coisa
-              </Text>
-              <Text style={styles.info26}>
-                Outra informação
-              </Text>
-              <Text style={styles.info16}>
-                Endereço
-              </Text>
-            </View>
-            <Image source={imagem6} style={{ width: 132, height: 87, zIndex: 3 }} contentFit="cover" />
-          </View>
-        </View>
+        <View style={styles.search3} />
       </View>
-      <Polygon1 />
     </ScrollView>
   );
 }
@@ -198,6 +197,18 @@ const styles = EStyleSheet.create({
   search: {
     width: '374rem',
     height: '48rem',
+    flexShrink: 0,
+    zIndex: 1,
+  },
+  search2: {
+    width: '374rem',
+    height: '168rem',
+    flexShrink: 0,
+    zIndex: 1,
+  },
+  search3: {
+    width: '374rem',
+    height: '168rem',
     flexShrink: 0,
     zIndex: 1,
   },
@@ -284,7 +295,7 @@ const styles = EStyleSheet.create({
   },
   locais: {
     width: '414rem',
-    height: '502rem',
+    height: '600rem',
     flexShrink: 0,
   },
   localCard: {
@@ -603,7 +614,7 @@ const styles = EStyleSheet.create({
     fontSize: '40rem',
     fontStyle: 'normal',
     fontWeight: '700',
-    letterSpacing: '0.41rem',
+    letterSpacing: '0.2rem',
   },
   background: {
     width: '394rem',
@@ -625,7 +636,7 @@ const styles = EStyleSheet.create({
     zIndex: 2,
   },
   local6: {
-    width: '102rem',
+    width: '155rem',
     height: '27rem',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -635,12 +646,12 @@ const styles = EStyleSheet.create({
     fontSize: '20rem',
     fontStyle: 'normal',
     fontWeight: '700',
-    letterSpacing: '0.15rem',
+    letterSpacing: '0.1rem',
     zIndex: 3,
   },
   info36: {
     width: '230rem',
-    height: '17rem',
+    height: '22rem',
     flexDirection: 'column',
     justifyContent: 'center',
     flexShrink: 0,
@@ -649,12 +660,12 @@ const styles = EStyleSheet.create({
     fontSize: '15rem',
     fontStyle: 'normal',
     fontWeight: '400',
-    letterSpacing: '0.2rem',
+    letterSpacing: '0.1rem',
     zIndex: 3,
   },
   info26: {
     width: '230rem',
-    height: '17rem',
+    height: '22rem',
     flexDirection: 'column',
     justifyContent: 'center',
     flexShrink: 0,
@@ -663,12 +674,12 @@ const styles = EStyleSheet.create({
     fontSize: '15rem',
     fontStyle: 'normal',
     fontWeight: '400',
-    letterSpacing: '0.2rem',
+    letterSpacing: '0.1rem',
     zIndex: 3,
   },
   info16: {
     width: '230rem',
-    height: '17rem',
+    height: '22rem',
     flexDirection: 'column',
     justifyContent: 'center',
     flexShrink: 0,
@@ -677,7 +688,7 @@ const styles = EStyleSheet.create({
     fontSize: '15rem',
     fontStyle: 'normal',
     fontWeight: '400',
-    letterSpacing: '0.2rem',
+    letterSpacing: '0.1rem',
     zIndex: 3,
   },
   imagem6: {
@@ -700,7 +711,17 @@ const styles = EStyleSheet.create({
     height: '200rem',
     flexDirection: 'column',
     justifyContent: 'center',
-    alignItems: 'flex-start',
+    gap: '0.6rem',
+    flexShrink: 0,
+    paddingVertical: '5rem',
+    paddingHorizontal: '10rem',
+    zIndex: 1,
+  },
+  cards2: {
+    width: '394rem',
+    height: '200rem',
+    flexDirection: 'column',
+    justifyContent: 'center',
     gap: '0.6rem',
     flexShrink: 0,
     paddingVertical: '5rem',
