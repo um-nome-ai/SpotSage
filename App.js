@@ -34,7 +34,6 @@ export default function App() {
 
   return (
     <View style={styles.container} onLayout={onLayoutRootView}>
-      <Text /*muito maduro*/>penis</Text>
       <Intro fonts={fontsLoaded}/>
       <StatusBar style="auto" />
     </View>

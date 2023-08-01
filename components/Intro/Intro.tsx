@@ -23,7 +23,7 @@ export function Intro(props: { fonts: Array<string> }) {
       <View style={styles.recentes}>
         <View style={styles.background}>
           <View style={styles.cards}>
-            <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
+            <View style={{ flexDirection: "row", justifyContent: 'space-between' }}>
               <Text style={styles.recentes2}>
                 Recentes
               </Text>
