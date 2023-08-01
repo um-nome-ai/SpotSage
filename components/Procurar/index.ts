@@ -1,2 +1,0 @@
-export {Procurar} from './Procurar';
-

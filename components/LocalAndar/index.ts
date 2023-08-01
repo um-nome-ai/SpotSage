@@ -1,2 +1,0 @@
-export {LocalAndar} from './LocalAndar';
-

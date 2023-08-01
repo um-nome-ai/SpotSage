@@ -1,2 +1,0 @@
-export {IconDrone} from './IconDrone';
-

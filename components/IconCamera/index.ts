@@ -1,2 +1,0 @@
-export {IconCamera} from './IconCamera';
-

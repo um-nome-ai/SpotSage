@@ -1,2 +1,0 @@
-export {IconHeart} from './IconHeart';
-

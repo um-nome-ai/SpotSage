@@ -1,2 +1,0 @@
-export {ChipsSelecetd} from './ChipsSelecetd';
-

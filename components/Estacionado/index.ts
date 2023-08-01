@@ -1,2 +1,0 @@
-export {Estacionado} from './Estacionado';
-
