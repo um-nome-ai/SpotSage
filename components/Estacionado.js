@@ -1,20 +1,23 @@
-import React, { useState } from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, View, Image, Button, Dimensions, TouchableOpacity } from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View, Dimensions, TouchableOpacity } from 'react-native';
 import theme from '../assets/theme'
+
+import Context from '../context';
 
 const { width, height } = Dimensions.get('window')
 
 export default function Estacionado() {
+  const { vaga, setEstacionado } = React.useContext(Context)
+
   return (
     <View style={styles.background}>
       <View style={styles.text}>
         <Text style={styles.title}>Seu carro está estacionado em:</Text>
-        <Text style={styles.subtitle}>Local</Text>
-        <Text style={styles.subtitle}>Prédio/Andar</Text>
-        <Text style={styles.subtitle}>Vaga</Text>
+        <Text style={styles.subtitle}>{vaga.local}</Text>
+        <Text style={styles.subtitle}>Prédio: {vaga.predio} / Andar: {vaga.andar}</Text>
+        <Text style={styles.subtitle}>Vaga: {vaga.vaga}</Text>
       </View>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={() => setEstacionado(false)}>
         <Text style={styles.buttonText}>SAIR</Text>
       </TouchableOpacity>
     </View>

@@ -9,6 +9,10 @@ import Estacionamento from './components/Estacionamento';
 
 const Stack = createNativeStackNavigator();
 
+// Context
+import Context, { Provider } from './context';
+
+
 export default function App() {
   // importa as fontes
   const [fontsLoaded] = useFonts({
@@ -22,18 +26,20 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{
-        headerShown: false
-      }} initialRouteName="Tela Inicial">
-        <Stack.Screen
-          name="Tela Inicial"
-          component={Intro}
-        />
-        <Stack.Screen
-          name="Estacionamento"
-          component={Estacionamento}
-        />
-      </Stack.Navigator>
+      <Provider>
+        <Stack.Navigator screenOptions={{
+          headerShown: false
+        }} initialRouteName="Tela Inicial">
+          <Stack.Screen
+            name="Tela Inicial"
+            component={Intro}
+          />
+          <Stack.Screen
+            name="Estacionamento"
+            component={Estacionamento}
+          />
+        </Stack.Navigator>
+      </Provider>
     </NavigationContainer>
   )
 }

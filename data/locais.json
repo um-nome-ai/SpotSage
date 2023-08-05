@@ -1,0 +1,318 @@
+[
+  {
+    "id": 0,
+    "info": {
+      "name": "Shopping Iguatemi",
+      "address": "Av. João Wallig, 1800 - Passo d'Areia, Porto Alegre",
+      "image": "iguatemi",
+      "hours": "10:00 - 22:00"
+    },
+    "data": {
+      "sectors": [
+        {
+          "name": "Prédio Norte",
+          "floors": [
+            {
+              "number": 0,
+              "available": 4
+            },
+            {
+              "number": 1,
+              "available": 0
+            },
+            {
+              "number": 2,
+              "available": 1
+            }            
+          ],
+          "total": 5
+        },
+        {
+          "name": "Prédio Oeste",
+          "floors": [
+            {
+              "number": 0,
+              "available": 0
+            }
+          ],
+          "total": 0
+        },
+        {
+          "name": "Prédio Sul",
+          "floors": [
+            {
+              "number": 0,
+              "available": 0
+            },
+            {
+              "number": 1,
+              "available": 1
+            }
+          ],
+          "total": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": 1,
+    "info": {
+      "name": "Bourbon Shopping Wallig",
+      "address": "Av. Assis Brasil, 2611 - Cristo Redentor, Porto Alegre",
+      "image": "wallig",
+      "hours": "10:00 - 22:00"
+    },
+    "data": {
+      "sectors": [
+        {
+          "name": "Prédio 1",
+          "floors": [
+            {
+              "number": 0,
+              "available": 4
+            },
+            {
+              "number": 1,
+              "available": 0
+            },
+            {
+              "number": 2,
+              "available": 4
+            }
+          ],
+          "total": 8
+        },
+        {
+          "name": "Prédio 2",
+          "floors": [
+            {
+              "number": 0,
+              "available": 10
+            }
+          ],
+          "total": 10
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "info": {
+      "name": "Shopping Total",
+      "address": "Av. Cristóvão Colombo, 545 - Independência, Porto Alegre",
+      "image": "total",
+      "hours": "10:00 - 22:00"
+    },
+    "data": {
+      "sectors": [
+        {
+          "name": "Prédio Norte",
+          "floors": [
+            {
+              "number": 0,
+              "available": 4
+            },
+            {
+              "number": 1,
+              "available": 0
+            },
+            {
+              "number": 2,
+              "available": 1
+            }
+          ],
+          "total": 5
+        },
+        {
+          "name": "Prédio Oeste",
+          "floors": [
+            {
+              "number": 0,
+              "available": 0
+            }
+          ],
+          "total": 0
+        },
+        {
+          "name": "Prédio Sul",
+          "floors": [
+            {
+              "number": 0,
+              "available": 0
+            },
+            {
+              "number": 1,
+              "available": 1
+            }
+          ],
+          "total": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "info": {
+      "name": "Pontal Shopping",
+      "address": "Av. Padre Cacique, 2893 - Cristal, Porto Alegre",
+      "image": "pontal",
+      "hours": "10:00 - 22:00"
+    },
+    "data": {
+      "sectors": [
+        {
+          "name": "Prédio Norte",
+          "floors": [
+            {
+              "number": 0,
+              "available": 4
+            },
+            {
+              "number": 1,
+              "available": 0
+            },
+            {
+              "number": 2,
+              "available": 1
+            }
+          ],
+          "total": 5
+        },
+        {
+          "name": "Prédio Oeste",
+          "floors": [
+            {
+              "number": 0,
+              "available": 0
+            }
+          ],
+          "total": 0
+        },
+        {
+          "name": "Prédio Sul",
+          "floors": [
+            {
+              "number": 0,
+              "available": 0
+            },
+            {
+              "number": 1,
+              "available": 1
+            }
+          ],
+          "total": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "info": {
+      "name": "Praia de Belas Shopping",
+      "address": "Av. Praia de Belas, 1181 - Praia de Belas, Porto Alegre",
+      "image": "praia",
+      "hours": "10:00 - 22:00"
+    },
+    "data": {
+      "sectors": [
+        {
+          "name": "Prédio Norte",
+          "floors": [
+            {
+              "number": 0,
+              "available": 4
+            },
+            {
+              "number": 1,
+              "available": 0
+            },
+            {
+              "number": 2,
+              "available": 1
+            }
+          ],
+          "total": 5
+        },
+        {
+          "name": "Prédio Oeste",
+          "floors": [
+            {
+              "number": 0,
+              "available": 0
+            }
+          ],
+          "total": 0
+        },
+        {
+          "name": "Prédio Sul",
+          "floors": [
+            {
+              "number": 0,
+              "available": 0
+            },
+            {
+              "number": 1,
+              "available": 1
+            }
+          ],
+          "total": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "info": {
+      "name": "Bourbon Shopping Ipiranga",
+      "address": "Av. Ipiranga, 5200 - Jardim Botânico, Porto Alegre",
+      "image": "iguatemi",
+      "hours": "10:00 - 22:00"
+    },
+    "data": {
+      "sectors": [
+        {
+          "name": "Prédio Norte",
+          "floors": [
+            {
+              "number": 0,
+              "available": 4
+            },
+            {
+              "number": 1,
+              "available": 0
+            },
+            {
+              "number": 2,
+              "available": 1
+            }
+          ],
+          "total": 5
+        },
+        {
+          "name": "Prédio Oeste",
+          "floors": [
+            {
+              "number": 0,
+              "available": 0
+            }
+          ],
+          "total": 0
+        },
+        {
+          "name": "Prédio Sul",
+          "floors": [
+            {
+              "number": 0,
+              "available": 0
+            },
+            {
+              "number": 1,
+              "available": 1
+            }
+          ],
+          "total": 1
+        }
+      ]
+    }
+  }
+]

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, View, Image, Button } from 'react-native';
+import { StyleSheet, TextInput, View, Image } from 'react-native';
 import theme from '../assets/theme'
 
 export default function SearchBar() {

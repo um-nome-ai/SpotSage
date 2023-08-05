@@ -1,34 +1,52 @@
-import React, { useState } from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, View, Image, Button, TouchableOpacity } from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView } from 'react-native';
 import theme from '../assets/theme'
 import Local from './Local';
 
-export default function Recentes({ navigation }) {
-  const [inputText, setInputText] = useState("")
+import Context from '../context';
 
-  return (
-    <View style={styles.backgroud}>
-      <View style={styles.header}>
-        <Text style={styles.title}>Recentes</Text>
-        <TouchableOpacity>
-          <Image
-            source={require('../assets/images/plus.png')}
-            style={{}}
-          />
-        </TouchableOpacity>
-      </View>
-      <View style={styles.cards}>
-        <Local data={{ image: require('../assets/images/shop1.png') }} navigation={navigation} />
-        <Local data={{ image: require('../assets/images/shop2.png') }} navigation={navigation} />
-      </View>
-    </View>
-  )
+export default function Recentes({ navigation }) {
+  const [ toggle, setToggle ] = React.useState(false)
+  const { recentes, setRecentes } = React.useContext(Context)
+  const locais = require('../data/locais.json')
+  const plus = require('../assets/images/plus.png')
+  const minus = require('../assets/images/minus.png')
+
+  function onPress()
+  {
+    setToggle(!toggle)
+  }
+
+  if (recentes[0] !== undefined)
+    return (
+      <ScrollView style={(toggle) ? {...styles.backgroud, maxHeight: '100%'} : {...styles.backgroud, maxHeight: 268}}>
+        <View style={styles.header}>
+          <Text style={styles.title}>Recentes</Text>
+          <TouchableOpacity onPress={onPress}>
+            <Image
+              source={toggle ? minus : plus}
+              style={{}}
+            />
+          </TouchableOpacity>
+        </View>
+        {(toggle) ?
+        <View style={styles.cards}>
+          {recentes.map((i,index) =>  <Local key={index} local={locais[i]} navigation={navigation} rec={true} />)}
+        </View> :
+        <View style={styles.cards}>
+          {(recentes[0] !== undefined) ? <Local local={locais[recentes[0]]} navigation={navigation} rec={true} /> : <></>}
+          {(recentes[1] !== undefined) ? <Local local={locais[recentes[1]]} navigation={navigation} rec={true} /> : <></>}
+        </View>}
+      </ScrollView>
+    )
+  else
+    return (
+      <View style={{marginBottom: 10}}/>
+    )
 }
 
 const styles = StyleSheet.create({
   backgroud: {
-    height: 268,
     flexShrink: 0,
     borderRadius: 12,
     backgroundColor: '#8C33FF',
@@ -56,5 +74,6 @@ const styles = StyleSheet.create({
   cards: {
     flexDirection: 'column',
     justifyContent: 'center',
+    paddingBottom: 5
   }
 });

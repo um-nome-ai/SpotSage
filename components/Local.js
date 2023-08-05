@@ -1,20 +1,29 @@
-import React, { useState } from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, View, Image, Button, TouchableOpacity } from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import theme from '../assets/theme'
 
-export default function Local({ navigation, data }) {
+import Context from '../context';
+//
+export default function Local({ navigation, local, rec }) {
+  const image = require('../data/imageList').default[local.info.image]
+  const { recentes, setRecentes } = React.useContext(Context)
+
+  function onPress() {
+    if (!recentes.includes(local.id))
+      setRecentes([...recentes, local.id])
+
+    navigation.navigate('Estacionamento', { data: local.data})
+  }
+
   return (
-    <TouchableOpacity style={styles.background} onPress={() => navigation.navigate('Estacionamento')}>
-      <View style={styles.info}>
-        <Text style={styles.title}>Local</Text>
-        <Text style={styles.subtext}>Endereço</Text>
-        <Text style={styles.subtext}>Outra informação</Text>
-        <Text style={styles.subtext}>Ultima coisa</Text>
+    <TouchableOpacity style={styles.background} onPress={onPress}>
+      <View style={{ ...styles.info, width: rec ? 200 : 228 }}>
+        <Text style={styles.title}>{local.info.name}</Text>
+        <Text style={styles.subtext}>{local.info.address}</Text>
       </View>
       <Image
-        source={data.image}
-        style={{width: 135, height: 90}}
+        source={image}
+        style={{ width: 135, height: 90 }}
       />
     </TouchableOpacity>
   )
@@ -34,31 +43,29 @@ const styles = StyleSheet.create({
     marginVertical: 5
   },
   info: {
-    marginLeft: 8,
-    marginBottom: 12
-  }, 
-  title: {
     display: 'flex',
+    marginLeft: 8,
+    marginBottom: 12,
+    flexDirection: 'column'
+  },
+  title: {
     height: 26,
-    flexDirection: 'column',
-    justifyContent: 'center',
     flexShrink: 0,
     color: '#000',
     fontFamily: 'Roboto',
     fontSize: 20,
-    fontStyle: 'normal',
+    fontWeight: 'bold',
     letterSpacing: 0.41
   },
   subtext: {
-    display: 'flex',
     height: 16,
-    flexDirection: 'column',
-    justifyContent: 'center',
     flexShrink: 0,
     color: theme.colors.textSecondary,
     fontFamily: 'Roboto',
     fontSize: 15,
     fontStyle: 'normal',
-    letterSpacing: 0.41
+    letterSpacing: 0.41,
+    flex: 1,
+    flexWrap: 'wrap'
   }
 });

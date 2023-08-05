@@ -1,13 +1,18 @@
 import * as React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, View, Image, Button, ScrollView } from 'react-native';
-import SearchBar from './SearchBar';
+import { StyleSheet, View, Text, ScrollView } from 'react-native';
+
 import theme from '../assets/theme';
+
+import SearchBar from './SearchBar';
 import Recentes from './Recentes';
 import LocaisProximos from './LocaisProximos'
 import Estacionado from './Estacionado';
 
+import Context from '../context';
+
 export default function Home({ navigation }) {
+  const { estacionado } = React.useContext(Context)
 
   return (
     <View style={styles.back}>
@@ -16,7 +21,7 @@ export default function Home({ navigation }) {
         <Recentes navigation={navigation}/>
         <LocaisProximos navigation={navigation}/>
       </ScrollView>
-      <Estacionado/>
+      {estacionado ? <Estacionado/> : <></>}
       <StatusBar style="auto" />
     </View>
   )
