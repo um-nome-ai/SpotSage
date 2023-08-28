@@ -4,13 +4,13 @@ import theme from '../assets/theme';
 import Context from '../context';
 
 export default function Vaga({ navigation, vagasPredio, index, address, setVagas, sectorName }) {
-  const { locais, mudarVagaLocal, setEstacionado, setVaga, vagas } = React.useContext(Context)
+  const { locais, mudarVagaLocal, vaga, estacionado, setEstacionado, setVaga, vagas } = React.useContext(Context)
 
-
-  function vagaToType(vaga)
+  function vagaToType(vagaA)
   {
-    const borderColor = (vaga.ocupado)? 'rgba(100, 0, 0, 0.5)' : ((vaga.prioridade)  ? 'rgba(0, 0, 100, 0.5)' : 'rgba(0, 100, 0, 0.5)')
-    const backgroundColor = (vaga.ocupado) ? '#CE0B0B' : ((vaga.prioridade) ? '#0B36CE' : '#1BCE0B')
+    const estacionadoAqui = estacionado && (vaga.andar === address.floorNumber) && (vaga.idPredio === address.sector) && (vaga.vaga === vagaA.vaga)
+    const borderColor = (vagaA.ocupado)? ((estacionadoAqui) ? 'rgba(100, 100, 0, 0.5)': 'rgba(100, 0, 0, 0.5)') : ((vagaA.prioridade)  ? 'rgba(0, 0, 100, 0.5)' : 'rgba(0, 100, 0, 0.5)')
+    const backgroundColor = (vagaA.ocupado) ? ((estacionadoAqui) ? '#fce303': '#CE0B0B') : ((vagaA.prioridade) ? '#0B36CE' : '#1BCE0B')
     return {borderWidth: 1, borderColor: borderColor, backgroundColor: backgroundColor}
   }
 
@@ -18,12 +18,15 @@ export default function Vaga({ navigation, vagasPredio, index, address, setVagas
   {
     //locais[id].data.sectors[sector].floors[floorNumber].map
 
+    if(estacionado === true){
+      ToastAndroid.showWithGravity('Você já está estacionado', ToastAndroid.SHORT, ToastAndroid.BOTTOM)
+    } else
     if(vagasPredio[index].ocupado === true) {
       ToastAndroid.showWithGravity('Vaga já ocupada', ToastAndroid.SHORT, ToastAndroid.BOTTOM)
     }
     else {
       const localIndex = locais.findIndex(local => local.id === address.id)
-      const vaga = {
+      const vagaB = {
         andar: address.floorNumber, 
         local: locais[localIndex].info.name, 
         predio: locais[localIndex].data.sectors[address.sector].name, 
@@ -32,8 +35,8 @@ export default function Vaga({ navigation, vagasPredio, index, address, setVagas
         idPredio: address.sector,
       }
       setEstacionado(true)
-      mudarVagaLocal(vaga, false, address)
-      setVaga(vaga)
+      mudarVagaLocal(vagaB, false, address)
+      setVaga(vagaB)
       setVagas([...vagas].map(vagaPredio => {
         if((vagaPredio.id === address.id) && (vagaPredio.sector === sectorName))
         {
@@ -43,11 +46,11 @@ export default function Vaga({ navigation, vagasPredio, index, address, setVagas
               [...vagaPredio.floors].map(floor => {
                 return {
                   id: floor.id, 
-                  data: floor.data.map(vaga => {
-                    if((vaga.vaga === vagasPredio[index].vaga) && (floor.id === address.floorNumber)){
-                      return {...vaga, ocupado: true}
+                  data: floor.data.map(vagaA => {
+                    if((vagaA.vaga === vagasPredio[index].vaga) && (floor.id === address.floorNumber)){
+                      return {...vagaA, ocupado: true}
                     } else {
-                      return {...vaga}
+                      return {...vagaA}
                     }})
                 }
               })

@@ -50,7 +50,7 @@ export function Provider({ children })
                 return {
                   id: floor.id, 
                   data: floor.data.map(vagaA => {
-                    if((vagaA.vagaA === vaga.vaga) && (floor.id === vagaA.andar)){
+                    if((vagaA.vaga === vaga.vaga) && (floor.id === vaga.andar)){
                       return {...vagaA, ocupado: false}
                     } else {
                       return {...vagaA}

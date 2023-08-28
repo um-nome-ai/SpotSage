@@ -9,11 +9,13 @@ import Context from '../context';
 export default function Estacionamento({route: { params: { navigation, id } } }) {
   const { locais } = React.useContext(Context)
   const [data, setData] = React.useState(locais[id].data)
+
   if(Platform.OS === 'android') {
     UIManager.setLayoutAnimationEnabledExperimental(true);
   }
   
   const [selecionado, setSelecionado] = React.useState(-1)
+  const [selecionadoAndar, setSelecionadoAndar] = React.useState(-1)
   const numPredios = data.sectors.length
   const numAndares = (selecionado === -1) ? 0 : data.sectors[selecionado].floors.length
   let tamBehind = (selecionado === 0) ?
@@ -32,6 +34,13 @@ export default function Estacionamento({route: { params: { navigation, id } } })
       setSelecionado(-1)
     else
       setSelecionado(numeroPredio)
+  }
+
+  function selecionaAndar(numeroAndar) {
+    if (selecionadoAndar === numeroAndar)
+      setSelecionadoAndar(-1)
+    else
+      setSelecionadoAndar(numeroAndar)
   }
 
   return (
@@ -53,6 +62,8 @@ export default function Estacionamento({route: { params: { navigation, id } } })
               navigation={navigation}
               tamBehind={tamBehind}
               localId={id}
+              selecionado={selecionadoAndar === floor.number}
+              selecionar={selecionaAndar}
             />
           )}
           <View style={{ ...styles.behind, ...tamBehind}} />

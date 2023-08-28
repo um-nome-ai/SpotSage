@@ -719,6 +719,584 @@
               "left": 115
             },
             "prioridade": true,
+            "ocupado": false
+          },
+          {
+            "vaga": "A2",
+            "pos": {
+              "top": 50,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "A3",
+            "pos": {
+              "top": 50,
+              "left": 203
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A4",
+            "pos": {
+              "top": 50,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A5",
+            "pos": {
+              "top": 50,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "B0",
+            "pos": {
+              "top": 201,
+              "left": 70
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B1",
+            "pos": {
+              "top": 201,
+              "left": 115
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "B2",
+            "pos": {
+              "top": 201,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B3",
+            "pos": {
+              "top": 201,
+              "left": 203
+            },
+            "prioridade": true,
+            "ocupado": true
+          },
+          {
+            "vaga": "B4",
+            "pos": {
+              "top": 201,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B5",
+            "pos": {
+              "top": 201,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": true
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "data": [
+          {
+            "vaga": "A0",
+            "pos": {
+              "top": 50,
+              "left": 70
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A1",
+            "pos": {
+              "top": 50,
+              "left": 115
+            },
+            "prioridade": true,
+            "ocupado": true
+          },
+          {
+            "vaga": "A2",
+            "pos": {
+              "top": 50,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A3",
+            "pos": {
+              "top": 50,
+              "left": 203
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A4",
+            "pos": {
+              "top": 50,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A5",
+            "pos": {
+              "top": 50,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B0",
+            "pos": {
+              "top": 201,
+              "left": 70
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B1",
+            "pos": {
+              "top": 201,
+              "left": 115
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B2",
+            "pos": {
+              "top": 201,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B3",
+            "pos": {
+              "top": 201,
+              "left": 203
+            },
+            "prioridade": true,
+            "ocupado": true
+          },
+          {
+            "vaga": "B4",
+            "pos": {
+              "top": 201,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B5",
+            "pos": {
+              "top": 201,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": true
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "data": [
+          {
+            "vaga": "A0",
+            "pos": {
+              "top": 50,
+              "left": 70
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "A1",
+            "pos": {
+              "top": 50,
+              "left": 115
+            },
+            "prioridade": true,
+            "ocupado": true
+          },
+          {
+            "vaga": "A2",
+            "pos": {
+              "top": 50,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A3",
+            "pos": {
+              "top": 50,
+              "left": 203
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A4",
+            "pos": {
+              "top": 50,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A5",
+            "pos": {
+              "top": 50,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B0",
+            "pos": {
+              "top": 201,
+              "left": 70
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "B1",
+            "pos": {
+              "top": 201,
+              "left": 115
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "B2",
+            "pos": {
+              "top": 201,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B3",
+            "pos": {
+              "top": 201,
+              "left": 203
+            },
+            "prioridade": true,
+            "ocupado": true
+          },
+          {
+            "vaga": "B4",
+            "pos": {
+              "top": 201,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "B5",
+            "pos": {
+              "top": 201,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": true
+          }
+        ]
+      }
+    ]
+  },  
+  {
+    "id": 1,
+    "sector": "Prédio 2",
+    "floors": [
+      {
+        "id": 0,
+        "data": [
+          {
+            "vaga": "A0",
+            "pos": {
+              "top": 50,
+              "left": 70
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "A1",
+            "pos": {
+              "top": 50,
+              "left": 115
+            },
+            "prioridade": true,
+            "ocupado": false
+          },
+          {
+            "vaga": "A2",
+            "pos": {
+              "top": 50,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "A3",
+            "pos": {
+              "top": 50,
+              "left": 203
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A4",
+            "pos": {
+              "top": 50,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "A5",
+            "pos": {
+              "top": 50,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "B0",
+            "pos": {
+              "top": 201,
+              "left": 70
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "B1",
+            "pos": {
+              "top": 201,
+              "left": 115
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "B2",
+            "pos": {
+              "top": 201,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "B3",
+            "pos": {
+              "top": 201,
+              "left": 203
+            },
+            "prioridade": true,
+            "ocupado": true
+          },
+          {
+            "vaga": "B4",
+            "pos": {
+              "top": 201,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "B5",
+            "pos": {
+              "top": 201,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": false
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "id": 2,
+    "sector": "Prédio Norte",
+    "floors": [
+      {
+        "id": 0,
+        "data": [
+          {
+            "vaga": "A0",
+            "pos": {
+              "top": 50,
+              "left": 70
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A1",
+            "pos": {
+              "top": 50,
+              "left": 115
+            },
+            "prioridade": true,
+            "ocupado": true
+          },
+          {
+            "vaga": "A2",
+            "pos": {
+              "top": 50,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "A3",
+            "pos": {
+              "top": 50,
+              "left": 203
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "A4",
+            "pos": {
+              "top": 50,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A5",
+            "pos": {
+              "top": 50,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B0",
+            "pos": {
+              "top": 201,
+              "left": 70
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "B1",
+            "pos": {
+              "top": 201,
+              "left": 115
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B2",
+            "pos": {
+              "top": 201,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "B3",
+            "pos": {
+              "top": 201,
+              "left": 203
+            },
+            "prioridade": true,
+            "ocupado": true
+          },
+          {
+            "vaga": "B4",
+            "pos": {
+              "top": 201,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B5",
+            "pos": {
+              "top": 201,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": true
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "data": [
+          {
+            "vaga": "A0",
+            "pos": {
+              "top": 50,
+              "left": 70
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A1",
+            "pos": {
+              "top": 50,
+              "left": 115
+            },
+            "prioridade": true,
             "ocupado": true
           },
           {
@@ -904,7 +1482,7 @@
               "left": 203
             },
             "prioridade": true,
-            "ocupado": true
+            "ocupado": false
           },
           {
             "vaga": "B4",
@@ -925,9 +1503,15 @@
             "ocupado": true
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "sector": "Prédio Oeste",
+    "floors": [
       {
-        "id": 2,
+        "id": 0,
         "data": [
           {
             "vaga": "A0",
@@ -1040,10 +1624,10 @@
         ]
       }
     ]
-  },  
+  },
   {
-    "id": 1,
-    "sector": "Prédio 2",
+    "id": 2,
+    "sector": "Prédio Sul",
     "floors": [
       {
         "id": 0,
@@ -1092,6 +1676,119 @@
             },
             "prioridade": false,
             "ocupado": true
+          },
+          {
+            "vaga": "A5",
+            "pos": {
+              "top": 50,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B0",
+            "pos": {
+              "top": 201,
+              "left": 70
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B1",
+            "pos": {
+              "top": 201,
+              "left": 115
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B2",
+            "pos": {
+              "top": 201,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B3",
+            "pos": {
+              "top": 201,
+              "left": 203
+            },
+            "prioridade": true,
+            "ocupado": true
+          },
+          {
+            "vaga": "B4",
+            "pos": {
+              "top": 201,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B5",
+            "pos": {
+              "top": 201,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": true
+          }
+        ]
+      },
+      {
+        "id": 0,
+        "data": [
+          {
+            "vaga": "A0",
+            "pos": {
+              "top": 50,
+              "left": 70
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A1",
+            "pos": {
+              "top": 50,
+              "left": 115
+            },
+            "prioridade": true,
+            "ocupado": true
+          },
+          {
+            "vaga": "A2",
+            "pos": {
+              "top": 50,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A3",
+            "pos": {
+              "top": 50,
+              "left": 203
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A4",
+            "pos": {
+              "top": 50,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": false
           },
           {
             "vaga": "A5",
@@ -1162,7 +1859,7 @@
   },
 
   {
-    "id": 2,
+    "id": 3,
     "sector": "Prédio Norte",
     "floors": [
       {
@@ -1184,6 +1881,96 @@
               "left": 115
             },
             "prioridade": true,
+            "ocupado": false
+          },
+          {
+            "vaga": "A2",
+            "pos": {
+              "top": 50,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A3",
+            "pos": {
+              "top": 50,
+              "left": 203
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A4",
+            "pos": {
+              "top": 50,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A5",
+            "pos": {
+              "top": 50,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B0",
+            "pos": {
+              "top": 201,
+              "left": 70
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "B1",
+            "pos": {
+              "top": 201,
+              "left": 115
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B2",
+            "pos": {
+              "top": 201,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "B3",
+            "pos": {
+              "top": 201,
+              "left": 203
+            },
+            "prioridade": true,
+            "ocupado": false
+          },
+          {
+            "vaga": "B4",
+            "pos": {
+              "top": 201,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B5",
+            "pos": {
+              "top": 201,
+              "left": 294
+            },
+            "prioridade": false,
             "ocupado": true
           }
         ]
@@ -1208,14 +1995,570 @@
             },
             "prioridade": true,
             "ocupado": true
+          },
+          {
+            "vaga": "A2",
+            "pos": {
+              "top": 50,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A3",
+            "pos": {
+              "top": 50,
+              "left": 203
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A4",
+            "pos": {
+              "top": 50,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A5",
+            "pos": {
+              "top": 50,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B0",
+            "pos": {
+              "top": 201,
+              "left": 70
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B1",
+            "pos": {
+              "top": 201,
+              "left": 115
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B2",
+            "pos": {
+              "top": 201,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B3",
+            "pos": {
+              "top": 201,
+              "left": 203
+            },
+            "prioridade": true,
+            "ocupado": true
+          },
+          {
+            "vaga": "B4",
+            "pos": {
+              "top": 201,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B5",
+            "pos": {
+              "top": 201,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": true
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "data": [
+          {
+            "vaga": "A0",
+            "pos": {
+              "top": 50,
+              "left": 70
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "A1",
+            "pos": {
+              "top": 50,
+              "left": 115
+            },
+            "prioridade": true,
+            "ocupado": true
+          },
+          {
+            "vaga": "A2",
+            "pos": {
+              "top": 50,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "A3",
+            "pos": {
+              "top": 50,
+              "left": 203
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "A4",
+            "pos": {
+              "top": 50,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A5",
+            "pos": {
+              "top": 50,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "B0",
+            "pos": {
+              "top": 201,
+              "left": 70
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "B1",
+            "pos": {
+              "top": 201,
+              "left": 115
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B2",
+            "pos": {
+              "top": 201,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B3",
+            "pos": {
+              "top": 201,
+              "left": 203
+            },
+            "prioridade": true,
+            "ocupado": false
+          },
+          {
+            "vaga": "B4",
+            "pos": {
+              "top": 201,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "B5",
+            "pos": {
+              "top": 201,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": false
+          }
+        ]
+      }
+    ]
+  },  
+  {
+    "id": 3,
+    "sector": "Prédio Sul",
+    "floors": [
+      {
+        "id": 0,
+        "data": [
+          {
+            "vaga": "A0",
+            "pos": {
+              "top": 50,
+              "left": 70
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A1",
+            "pos": {
+              "top": 50,
+              "left": 115
+            },
+            "prioridade": true,
+            "ocupado": true
+          },
+          {
+            "vaga": "A2",
+            "pos": {
+              "top": 50,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A3",
+            "pos": {
+              "top": 50,
+              "left": 203
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A4",
+            "pos": {
+              "top": 50,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A5",
+            "pos": {
+              "top": 50,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B0",
+            "pos": {
+              "top": 201,
+              "left": 70
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B1",
+            "pos": {
+              "top": 201,
+              "left": 115
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B2",
+            "pos": {
+              "top": 201,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B3",
+            "pos": {
+              "top": 201,
+              "left": 203
+            },
+            "prioridade": true,
+            "ocupado": true
+          },
+          {
+            "vaga": "B4",
+            "pos": {
+              "top": 201,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B5",
+            "pos": {
+              "top": 201,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": true
+          }
+        ]
+      }
+    ]
+  }, 
+
+  {
+    "id": 4,
+    "sector": "Prédio Union",
+    "floors": [
+      {
+        "id": 0,
+        "data": [
+          {
+            "vaga": "A0",
+            "pos": {
+              "top": 50,
+              "left": 70
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A1",
+            "pos": {
+              "top": 50,
+              "left": 115
+            },
+            "prioridade": true,
+            "ocupado": true
+          },
+          {
+            "vaga": "A2",
+            "pos": {
+              "top": 50,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A3",
+            "pos": {
+              "top": 50,
+              "left": 203
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A4",
+            "pos": {
+              "top": 50,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "A5",
+            "pos": {
+              "top": 50,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "B0",
+            "pos": {
+              "top": 201,
+              "left": 70
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B1",
+            "pos": {
+              "top": 201,
+              "left": 115
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B2",
+            "pos": {
+              "top": 201,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B3",
+            "pos": {
+              "top": 201,
+              "left": 203
+            },
+            "prioridade": true,
+            "ocupado": true
+          },
+          {
+            "vaga": "B4",
+            "pos": {
+              "top": 201,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B5",
+            "pos": {
+              "top": 201,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": true
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "data": [
+          {
+            "vaga": "A0",
+            "pos": {
+              "top": 50,
+              "left": 70
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "A1",
+            "pos": {
+              "top": 50,
+              "left": 115
+            },
+            "prioridade": true,
+            "ocupado": true
+          },
+          {
+            "vaga": "A2",
+            "pos": {
+              "top": 50,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A3",
+            "pos": {
+              "top": 50,
+              "left": 203
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "A4",
+            "pos": {
+              "top": 50,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "A5",
+            "pos": {
+              "top": 50,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B0",
+            "pos": {
+              "top": 201,
+              "left": 70
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B1",
+            "pos": {
+              "top": 201,
+              "left": 115
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B2",
+            "pos": {
+              "top": 201,
+              "left": 160
+            },
+            "prioridade": false,
+            "ocupado": false
+          },
+          {
+            "vaga": "B3",
+            "pos": {
+              "top": 201,
+              "left": 203
+            },
+            "prioridade": true,
+            "ocupado": false
+          },
+          {
+            "vaga": "B4",
+            "pos": {
+              "top": 201,
+              "left": 248
+            },
+            "prioridade": false,
+            "ocupado": true
+          },
+          {
+            "vaga": "B5",
+            "pos": {
+              "top": 201,
+              "left": 294
+            },
+            "prioridade": false,
+            "ocupado": false
           }
         ]
       }
     ]
   },
+
   {
-    "id": "0",
-    "sector": "0",
+    "id": 5,
+    "sector": "Seção A",
     "floors": [
       {
         "id": 0,
@@ -1236,7 +2579,7 @@
               "left": 115
             },
             "prioridade": true,
-            "ocupado": true
+            "ocupado": false
           },
           {
             "vaga": "A2",
@@ -1245,7 +2588,7 @@
               "left": 160
             },
             "prioridade": false,
-            "ocupado": true
+            "ocupado": false
           },
           {
             "vaga": "A3",
@@ -1254,7 +2597,7 @@
               "left": 203
             },
             "prioridade": false,
-            "ocupado": true
+            "ocupado": false
           },
           {
             "vaga": "A4",
@@ -1263,7 +2606,7 @@
               "left": 248
             },
             "prioridade": false,
-            "ocupado": true
+            "ocupado": false
           },
           {
             "vaga": "A5",
@@ -1281,7 +2624,7 @@
               "left": 70
             },
             "prioridade": false,
-            "ocupado": true
+            "ocupado": false
           },
           {
             "vaga": "B1",
@@ -1290,7 +2633,7 @@
               "left": 115
             },
             "prioridade": false,
-            "ocupado": true
+            "ocupado": false
           },
           {
             "vaga": "B2",
@@ -1299,7 +2642,7 @@
               "left": 160
             },
             "prioridade": false,
-            "ocupado": true
+            "ocupado": false
           },
           {
             "vaga": "B3",
@@ -1308,7 +2651,7 @@
               "left": 203
             },
             "prioridade": true,
-            "ocupado": true
+            "ocupado": false
           },
           {
             "vaga": "B4",
@@ -1317,7 +2660,7 @@
               "left": 248
             },
             "prioridade": false,
-            "ocupado": true
+            "ocupado": false
           },
           {
             "vaga": "B5",
@@ -1326,923 +2669,7 @@
               "left": 294
             },
             "prioridade": false,
-            "ocupado": true
-          }
-        ]
-      },
-      {
-        "id": 1,
-        "data": [
-          {
-            "vaga": "A0",
-            "pos": {
-              "top": 50,
-              "left": 70
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A1",
-            "pos": {
-              "top": 50,
-              "left": 115
-            },
-            "prioridade": true,
-            "ocupado": true
-          },
-          {
-            "vaga": "A2",
-            "pos": {
-              "top": 50,
-              "left": 160
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A3",
-            "pos": {
-              "top": 50,
-              "left": 203
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A4",
-            "pos": {
-              "top": 50,
-              "left": 248
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A5",
-            "pos": {
-              "top": 50,
-              "left": 294
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B0",
-            "pos": {
-              "top": 201,
-              "left": 70
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B1",
-            "pos": {
-              "top": 201,
-              "left": 115
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B2",
-            "pos": {
-              "top": 201,
-              "left": 160
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B3",
-            "pos": {
-              "top": 201,
-              "left": 203
-            },
-            "prioridade": true,
-            "ocupado": true
-          },
-          {
-            "vaga": "B4",
-            "pos": {
-              "top": 201,
-              "left": 248
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B5",
-            "pos": {
-              "top": 201,
-              "left": 294
-            },
-            "prioridade": false,
-            "ocupado": true
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "data": [
-          {
-            "vaga": "A0",
-            "pos": {
-              "top": 50,
-              "left": 70
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A1",
-            "pos": {
-              "top": 50,
-              "left": 115
-            },
-            "prioridade": true,
-            "ocupado": true
-          },
-          {
-            "vaga": "A2",
-            "pos": {
-              "top": 50,
-              "left": 160
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A3",
-            "pos": {
-              "top": 50,
-              "left": 203
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A4",
-            "pos": {
-              "top": 50,
-              "left": 248
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A5",
-            "pos": {
-              "top": 50,
-              "left": 294
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B0",
-            "pos": {
-              "top": 201,
-              "left": 70
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B1",
-            "pos": {
-              "top": 201,
-              "left": 115
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B2",
-            "pos": {
-              "top": 201,
-              "left": 160
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B3",
-            "pos": {
-              "top": 201,
-              "left": 203
-            },
-            "prioridade": true,
-            "ocupado": true
-          },
-          {
-            "vaga": "B4",
-            "pos": {
-              "top": 201,
-              "left": 248
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B5",
-            "pos": {
-              "top": 201,
-              "left": 294
-            },
-            "prioridade": false,
-            "ocupado": true
-          }
-        ]
-      }
-    ]
-  },  
-  {
-    "id": "0",
-    "sector": "0",
-    "floors": [
-      {
-        "id": 0,
-        "data": [
-          {
-            "vaga": "A0",
-            "pos": {
-              "top": 50,
-              "left": 70
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A1",
-            "pos": {
-              "top": 50,
-              "left": 115
-            },
-            "prioridade": true,
-            "ocupado": true
-          },
-          {
-            "vaga": "A2",
-            "pos": {
-              "top": 50,
-              "left": 160
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A3",
-            "pos": {
-              "top": 50,
-              "left": 203
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A4",
-            "pos": {
-              "top": 50,
-              "left": 248
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A5",
-            "pos": {
-              "top": 50,
-              "left": 294
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B0",
-            "pos": {
-              "top": 201,
-              "left": 70
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B1",
-            "pos": {
-              "top": 201,
-              "left": 115
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B2",
-            "pos": {
-              "top": 201,
-              "left": 160
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B3",
-            "pos": {
-              "top": 201,
-              "left": 203
-            },
-            "prioridade": true,
-            "ocupado": true
-          },
-          {
-            "vaga": "B4",
-            "pos": {
-              "top": 201,
-              "left": 248
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B5",
-            "pos": {
-              "top": 201,
-              "left": 294
-            },
-            "prioridade": false,
-            "ocupado": true
-          }
-        ]
-      },
-      {
-        "id": 1,
-        "data": [
-          {
-            "vaga": "A0",
-            "pos": {
-              "top": 50,
-              "left": 70
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A1",
-            "pos": {
-              "top": 50,
-              "left": 115
-            },
-            "prioridade": true,
-            "ocupado": true
-          },
-          {
-            "vaga": "A2",
-            "pos": {
-              "top": 50,
-              "left": 160
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A3",
-            "pos": {
-              "top": 50,
-              "left": 203
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A4",
-            "pos": {
-              "top": 50,
-              "left": 248
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A5",
-            "pos": {
-              "top": 50,
-              "left": 294
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B0",
-            "pos": {
-              "top": 201,
-              "left": 70
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B1",
-            "pos": {
-              "top": 201,
-              "left": 115
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B2",
-            "pos": {
-              "top": 201,
-              "left": 160
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B3",
-            "pos": {
-              "top": 201,
-              "left": 203
-            },
-            "prioridade": true,
-            "ocupado": true
-          },
-          {
-            "vaga": "B4",
-            "pos": {
-              "top": 201,
-              "left": 248
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B5",
-            "pos": {
-              "top": 201,
-              "left": 294
-            },
-            "prioridade": false,
-            "ocupado": true
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "data": [
-          {
-            "vaga": "A0",
-            "pos": {
-              "top": 50,
-              "left": 70
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A1",
-            "pos": {
-              "top": 50,
-              "left": 115
-            },
-            "prioridade": true,
-            "ocupado": true
-          },
-          {
-            "vaga": "A2",
-            "pos": {
-              "top": 50,
-              "left": 160
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A3",
-            "pos": {
-              "top": 50,
-              "left": 203
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A4",
-            "pos": {
-              "top": 50,
-              "left": 248
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A5",
-            "pos": {
-              "top": 50,
-              "left": 294
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B0",
-            "pos": {
-              "top": 201,
-              "left": 70
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B1",
-            "pos": {
-              "top": 201,
-              "left": 115
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B2",
-            "pos": {
-              "top": 201,
-              "left": 160
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B3",
-            "pos": {
-              "top": 201,
-              "left": 203
-            },
-            "prioridade": true,
-            "ocupado": true
-          },
-          {
-            "vaga": "B4",
-            "pos": {
-              "top": 201,
-              "left": 248
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B5",
-            "pos": {
-              "top": 201,
-              "left": 294
-            },
-            "prioridade": false,
-            "ocupado": true
-          }
-        ]
-      }
-    ]
-  },  
-  {
-    "id": "0",
-    "sector": "0",
-    "floors": [
-      {
-        "id": 0,
-        "data": [
-          {
-            "vaga": "A0",
-            "pos": {
-              "top": 50,
-              "left": 70
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A1",
-            "pos": {
-              "top": 50,
-              "left": 115
-            },
-            "prioridade": true,
-            "ocupado": true
-          },
-          {
-            "vaga": "A2",
-            "pos": {
-              "top": 50,
-              "left": 160
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A3",
-            "pos": {
-              "top": 50,
-              "left": 203
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A4",
-            "pos": {
-              "top": 50,
-              "left": 248
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A5",
-            "pos": {
-              "top": 50,
-              "left": 294
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B0",
-            "pos": {
-              "top": 201,
-              "left": 70
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B1",
-            "pos": {
-              "top": 201,
-              "left": 115
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B2",
-            "pos": {
-              "top": 201,
-              "left": 160
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B3",
-            "pos": {
-              "top": 201,
-              "left": 203
-            },
-            "prioridade": true,
-            "ocupado": true
-          },
-          {
-            "vaga": "B4",
-            "pos": {
-              "top": 201,
-              "left": 248
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B5",
-            "pos": {
-              "top": 201,
-              "left": 294
-            },
-            "prioridade": false,
-            "ocupado": true
-          }
-        ]
-      },
-      {
-        "id": 1,
-        "data": [
-          {
-            "vaga": "A0",
-            "pos": {
-              "top": 50,
-              "left": 70
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A1",
-            "pos": {
-              "top": 50,
-              "left": 115
-            },
-            "prioridade": true,
-            "ocupado": true
-          },
-          {
-            "vaga": "A2",
-            "pos": {
-              "top": 50,
-              "left": 160
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A3",
-            "pos": {
-              "top": 50,
-              "left": 203
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A4",
-            "pos": {
-              "top": 50,
-              "left": 248
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A5",
-            "pos": {
-              "top": 50,
-              "left": 294
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B0",
-            "pos": {
-              "top": 201,
-              "left": 70
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B1",
-            "pos": {
-              "top": 201,
-              "left": 115
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B2",
-            "pos": {
-              "top": 201,
-              "left": 160
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B3",
-            "pos": {
-              "top": 201,
-              "left": 203
-            },
-            "prioridade": true,
-            "ocupado": true
-          },
-          {
-            "vaga": "B4",
-            "pos": {
-              "top": 201,
-              "left": 248
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B5",
-            "pos": {
-              "top": 201,
-              "left": 294
-            },
-            "prioridade": false,
-            "ocupado": true
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "data": [
-          {
-            "vaga": "A0",
-            "pos": {
-              "top": 50,
-              "left": 70
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A1",
-            "pos": {
-              "top": 50,
-              "left": 115
-            },
-            "prioridade": true,
-            "ocupado": true
-          },
-          {
-            "vaga": "A2",
-            "pos": {
-              "top": 50,
-              "left": 160
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A3",
-            "pos": {
-              "top": 50,
-              "left": 203
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A4",
-            "pos": {
-              "top": 50,
-              "left": 248
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "A5",
-            "pos": {
-              "top": 50,
-              "left": 294
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B0",
-            "pos": {
-              "top": 201,
-              "left": 70
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B1",
-            "pos": {
-              "top": 201,
-              "left": 115
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B2",
-            "pos": {
-              "top": 201,
-              "left": 160
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B3",
-            "pos": {
-              "top": 201,
-              "left": 203
-            },
-            "prioridade": true,
-            "ocupado": true
-          },
-          {
-            "vaga": "B4",
-            "pos": {
-              "top": 201,
-              "left": 248
-            },
-            "prioridade": false,
-            "ocupado": true
-          },
-          {
-            "vaga": "B5",
-            "pos": {
-              "top": 201,
-              "left": 294
-            },
-            "prioridade": false,
-            "ocupado": true
+            "ocupado": false
           }
         ]
       }

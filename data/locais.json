@@ -174,20 +174,10 @@
             },
             {
               "number": 2,
-              "available": 1
+              "available": 8
             }
           ],
           "total": 5
-        },
-        {
-          "name": "Prédio Oeste",
-          "floors": [
-            {
-              "number": 0,
-              "available": 0
-            }
-          ],
-          "total": 0
         },
         {
           "name": "Prédio Sul",
@@ -195,13 +185,9 @@
             {
               "number": 0,
               "available": 0
-            },
-            {
-              "number": 1,
-              "available": 1
             }
           ],
-          "total": 1
+          "total": 0
         }
       ]
     }
@@ -217,46 +203,18 @@
     "data": {
       "sectors": [
         {
-          "name": "Prédio Norte",
+          "name": "Prédio Union",
           "floors": [
             {
               "number": 0,
-              "available": 4
+              "available": 2
             },
             {
               "number": 1,
-              "available": 0
-            },
-            {
-              "number": 2,
-              "available": 1
+              "available": 5
             }
           ],
           "total": 5
-        },
-        {
-          "name": "Prédio Oeste",
-          "floors": [
-            {
-              "number": 0,
-              "available": 0
-            }
-          ],
-          "total": 0
-        },
-        {
-          "name": "Prédio Sul",
-          "floors": [
-            {
-              "number": 0,
-              "available": 0
-            },
-            {
-              "number": 1,
-              "available": 1
-            }
-          ],
-          "total": 1
         }
       ]
     }
@@ -272,46 +230,14 @@
     "data": {
       "sectors": [
         {
-          "name": "Prédio Norte",
+          "name": "Seção A",
           "floors": [
             {
               "number": 0,
-              "available": 4
-            },
-            {
-              "number": 1,
-              "available": 0
-            },
-            {
-              "number": 2,
-              "available": 1
+              "available": 10
             }
           ],
           "total": 5
-        },
-        {
-          "name": "Prédio Oeste",
-          "floors": [
-            {
-              "number": 0,
-              "available": 0
-            }
-          ],
-          "total": 0
-        },
-        {
-          "name": "Prédio Sul",
-          "floors": [
-            {
-              "number": 0,
-              "available": 0
-            },
-            {
-              "number": 1,
-              "available": 1
-            }
-          ],
-          "total": 1
         }
       ]
     }
