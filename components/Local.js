@@ -10,7 +10,7 @@ export default function Local({ navigation, local, rec }) {
 
   function onPress() {
     if (!recentes.includes(local.id))
-      setRecentes([...recentes, local.id])
+      setRecentes([local.id, ...recentes, ])
 
     navigation.navigate('Estacionamento', { navigation: navigation, id: local.id})
   }
