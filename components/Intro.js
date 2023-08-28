@@ -12,8 +12,9 @@ import Estacionado from './Estacionado';
 import Context from '../context';
 
 export default function Home({ navigation }) {
-  const { estacionado } = React.useContext(Context)
+  const { estacionado, locais } = React.useContext(Context)
 
+  console.log(locais[0].data.sectors[0])
   return (
     <View style={styles.back}>
       <SearchBar />

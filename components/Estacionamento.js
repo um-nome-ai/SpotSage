@@ -4,8 +4,11 @@ import theme from '../assets/theme';
 
 import Andar from './Andar';
 import Secao from './Secao';
+import Context from '../context';
 
-export default function Estacionamento({route: { params: { navigation, data, id } } }) {
+export default function Estacionamento({route: { params: { navigation, id } } }) {
+  const { locais } = React.useContext(Context)
+  const [data, setData] = React.useState(locais[id].data)
   if(Platform.OS === 'android') {
     UIManager.setLayoutAnimationEnabledExperimental(true);
   }
