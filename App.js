@@ -6,6 +6,7 @@ import { useFonts } from 'expo-font';
 // Pages
 import Intro from './components/Intro';
 import Estacionamento from './components/Estacionamento';
+import Map from './components/Map';
 
 const Stack = createNativeStackNavigator();
 
@@ -37,6 +38,10 @@ export default function App() {
           <Stack.Screen
             name="Estacionamento"
             component={Estacionamento}
+          />
+          <Stack.Screen
+            name="Map"
+            component={Map}
           />
         </Stack.Navigator>
       </Provider>

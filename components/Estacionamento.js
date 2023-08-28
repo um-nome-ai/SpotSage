@@ -1,41 +1,60 @@
 import * as React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, LayoutAnimation, View, UIManager, ScrollView } from 'react-native';
 import theme from '../assets/theme';
 
 import Andar from './Andar';
 import Secao from './Secao';
 
-export default function Estacionamento({ route: { params: { data } } }) {
+export default function Estacionamento({route: { params: { navigation, data, id } } }) {
+  if(Platform.OS === 'android') {
+    UIManager.setLayoutAnimationEnabledExperimental(true);
+  }
+  
   const [selecionado, setSelecionado] = React.useState(-1)
   const numPredios = data.sectors.length
   const numAndares = (selecionado === -1) ? 0 : data.sectors[selecionado].floors.length
-
-  let tamBehind = (selecionado === 0) ? 
-    { left: 10, width: 360 } : 
-    ((selecionado === (numPredios-1)) ? 
-      {left: 24, width: 360} : 
-      {left: 24, width: 346}
+  let tamBehind = (selecionado === 0) ?
+    { left: 10, width: 360 } :
+    ((selecionado === (numPredios - 1)) ?
+      { left: 24, width: 360 } :
+      { left: 24, width: 346 }
     )
-  ;
+    ;
 
-  tamBehind = {...tamBehind, height: (numAndares <= 1) ? 0 : (70*numAndares)}
+    //(numAndares <= 1) ? 0 : (70 * numAndares)
+  tamBehind = { ...tamBehind, height: (numAndares <= 1) ? 0 : '85%'}
 
-  function seleciona(numeroPredio){
-    if(selecionado === numeroPredio)
+  function seleciona(numeroPredio) {
+    if (selecionado === numeroPredio)
       setSelecionado(-1)
     else
       setSelecionado(numeroPredio)
   }
+
   return (
     <View style={styles.background}>
       <View style={styles.mainFlex}>
-        {data.sectors.map((sector, index) => <Secao selecionado={selecionado} key={index} id={index} name={sector.name} seleciona={seleciona} vagas={sector.total}/>)}
+        {data.sectors.map((sector, index) => <Secao selecionado={selecionado} key={index} id={index} name={sector.name} seleciona={seleciona} vagas={sector.total} />)}
       </View>
-      {(selecionado === -1) ? <></> : 
-        <View style={styles.andares}>
-          {data.sectors[selecionado].floors.map((floor, index) => <Andar key={index} numAndares={data.sectors[selecionado].floors.length} andar={floor.number} vagas={floor.available} numPredios={numPredios} predio={selecionado}/>)}
-          <View style={{...styles.behind, ...tamBehind}}/>
-        </View>}
+      {(selecionado === -1) ? <></> :
+        <ScrollView contentInsetAdjustmentBehavior='automatic' style={styles.andares}>
+          {data.sectors[selecionado].floors.map((floor, index) =>
+            <Andar
+              key={index}
+              numAndares={data.sectors[selecionado].floors.length}
+              andar={floor.number}
+              vagas={floor.available}
+              numPredios={numPredios}
+              predio={selecionado}
+              predioName={data.sectors[selecionado].name}
+              navigation={navigation}
+              tamBehind={tamBehind}
+              localId={id}
+            />
+          )}
+          <View style={{ ...styles.behind, ...tamBehind}} />
+        </ScrollView>
+      }
     </View>
   )
 }

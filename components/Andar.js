@@ -1,28 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import theme from '../assets/theme'
 
-export default function Andar({ numAndares, andar, numPredios, predio, vagas }) {
+import Map from './Map';
+import Context from '../context';
+import Collapsible from 'react-native-collapsible';
+
+export default function Andar({ localId, navigation, numAndares, andar, numPredios, predio, predioName, vagas, tamBehind }) {
   const bottomLeft = ((numAndares === (andar + 1)) || (predio !== 0)) ? 8 : 0
   const bottomRight = ((numAndares === (andar + 1)) || (predio !== (numPredios - 1))) ? 8 : 0
   const topLeft = ((predio !== 0)) ? 8 : 0
   const topRight = (predio !== (numPredios - 1)) ? 8 : 0
 
+  const [isExpanded, setIsExpanded] = useState(false)
+  const indexMargin = (predio === 0) ? 20 : ((predio === (numPredios - 1)) ? 35 : 25)
+
   return (
-    <TouchableOpacity
-      style={{
-        ...styles.background,
-        borderBottomLeftRadius: bottomLeft,
-        borderBottomRightRadius: bottomRight,
-        borderTopLeftRadius: topLeft,
-        borderTopRightRadius: topRight
-      }}
-      activeOpacity={1}>
-      <View style={styles.flex}>
-        <Text style={styles.text}>{andar}º Andar</Text>
-        <Text style={styles.text}>{vagas}</Text>
-      </View>
-    </TouchableOpacity>
+    <View>
+      <TouchableOpacity
+        style={{
+          ...styles.background,
+          borderBottomLeftRadius: bottomLeft,
+          borderBottomRightRadius: bottomRight,
+          borderTopLeftRadius: topLeft,
+          borderTopRightRadius: topRight
+        }}
+        activeOpacity={1}
+        onPress={() => {
+          //navigation.navigate('Map', {navigation: navigation, id:0, sectorName: predioName, sector:predio, floorNumber:andar})
+          setIsExpanded(!isExpanded)
+        }}
+        >
+        <View style={styles.flex}>
+          <Text style={styles.text}>{andar}º Andar</Text>
+          <Text style={styles.text}>{vagas}</Text>
+        </View>
+      </TouchableOpacity>
+      { isExpanded && <View style={{left: tamBehind.left + 10}}>
+        <Map 
+          navigation={navigation}
+          id={localId}
+          sectorName={predioName}
+          sector={predio}
+          floorNumber={andar}
+        />
+      </View>}
+    </View>
   )
 }
 
@@ -53,5 +76,15 @@ const styles = StyleSheet.create({
     fontFamily: 'Roboto',
     fontSize: 36,
     fontWeight: 'bold'
+  },
+  behind: {
+    borderRadius: 8,
+    marginLeft: 20,
+    width: 340,
+    height: 100,
+    backgroundColor: '#000'
+  },
+  map: {
+    width: '100%'
   }
 });

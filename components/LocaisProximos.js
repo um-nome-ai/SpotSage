@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import theme from '../assets/theme'
 import Local from './Local';
 
+import Context from '../context';
+
 export default function LocaisProximos({ navigation }) {
-  const locais = require('../data/locais.json')
+  const { locais } = useContext(Context)
 
   return (
     <View style={styles.backgroud}>

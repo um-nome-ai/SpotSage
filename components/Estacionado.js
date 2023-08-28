@@ -7,7 +7,12 @@ import Context from '../context';
 const { width, height } = Dimensions.get('window')
 
 export default function Estacionado() {
-  const { vaga, setEstacionado } = React.useContext(Context)
+  const { vaga, setEstacionado, mudarVagaLocal } = React.useContext(Context)
+
+  function sair() {
+    setEstacionado(false)
+    mudarVagaLocal(vaga, true)
+  }
 
   return (
     <View style={styles.background}>
@@ -17,7 +22,7 @@ export default function Estacionado() {
         <Text style={styles.subtitle}>Prédio: {vaga.predio} / Andar: {vaga.andar}</Text>
         <Text style={styles.subtitle}>Vaga: {vaga.vaga}</Text>
       </View>
-      <TouchableOpacity style={styles.button} onPress={() => setEstacionado(false)}>
+      <TouchableOpacity style={styles.button} onPress={sair}>
         <Text style={styles.buttonText}>SAIR</Text>
       </TouchableOpacity>
     </View>
